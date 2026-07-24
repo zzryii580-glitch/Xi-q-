@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHONGQING DESIGN - Anime Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Partikel Sakura di Background -->
+    <div class="sakura-container" id="sakuraContainer"></div>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo glitch" data-text="CHONGQING">CHONGQING<span>.DESIGN</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#works" class="nav-link">Works</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Halaman Home -->
+    <section id="home" class="page active">
+        <div class="hero-content">
+            <h1 class="glitch" data-text="CREATIVE DESIGN">CREATIVE DESIGN</h1>
+            <p>We bring your imagination to life with a touch of anime aesthetics and modern design.</p>
+            <button onclick="navigateTo('works')">View My Works</button>
+        </div>
+        
+        <!-- Karakter Anime Interaktif -->
+        <div class="anime-character" id="animeChar" onclick="animateCharacter()">
+            <img src="https://z-cdn-media.chatglm.cn/files/44c7dd12-ebbb-4415-a974-4ae897194d01.jpeg?auth_key=1884911023-8fe1b43cd8594d069fb75c203663b9ac-0-c141cb5320c5fafe2362212f637b0816" alt="Anime Character">
+            <div class="tap-hint">Klik Saya!</div>
+        </div>
+    </section>
+
+    <!-- Halaman Services -->
+    <section id="services" class="page">
+        <div class="section-header">
+            <h2>OUR SERVICES</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="cards-container">
+            <div class="card">
+                <i class="fas fa-pen-nib"></i>
+                <h3>Logo Design</h3>
+                <p>Unique and memorable logos tailored to your brand identity.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-desktop"></i>
+                <h3>Web Design</h3>
+                <p>Modern, responsive, and visually stunning website interfaces.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>UI/UX Design</h3>
+                <p>User-centric designs that provide seamless experiences.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Halaman Works dengan Foto Desain yang Diminta -->
+    <section id="works" class="page">
+        <div class="section-header">
+            <h2>LATEST WORKS</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="works-grid">
+            <!-- C-TECH Logo -->
+            <div class="work-item" style="background-image: url('https://z-cdn-media.chatglm.cn/files/a81addd7-b99f-4020-b2ed-0f172fafa72b.png?auth_key=1884911226-773349a81047431db6f9739577dbf1a9-0-fd800cd9fabb983528eb40f15cdf1d1a');">
+                <div class="work-overlay">
+                    <h3>C - TECH</h3>
+                    <p>Logo & Brand Identity</p>
+                </div>
+            </div>
+            <!-- C-TECH Office -->
+            <div class="work-item" style="background-image: url('https://z-cdn-media.chatglm.cn/files/950a20ad-106b-4a92-804b-6b5869b5e965.png?auth_key=1884911226-b4765c873e1a44599b0fa9161bf87bd1-0-4e6e313c76289ecd30d58f8131c50fa6');">
+                <div class="work-overlay">
+                    <h3>C - TECH Office</h3>
+                    <p>Corporate Branding</p>
+                </div>
+            </div>
+            <!-- Raja Ampat Tourism -->
+            <div class="work-item" style="background-image: url('https://z-cdn-media.chatglm.cn/files/5f77a566-2501-48c7-89b7-a3fe12741660.png?auth_key=1884911226-ea40353d177e4e35851c7aecf43d9745-0-a914f9983d8b9a388dc0814782d3658c');">
+                <div class="work-overlay">
+                    <h3>RAJA AMPAT</h3>
+                    <p>Tourism Poster Design</p>
+                </div>
+            </div>
+            <!-- China Hi-Tech Group -->
+            <div class="work-item" style="background-image: url('https://z-cdn-media.chatglm.cn/files/89256c89-2228-4f98-bffd-e8d5804cfcde.png?auth_key=1884911226-b2d2b613412b49f99e8ddaa8debc3557-0-ac70992de7751ee7eb2740f414d2ef92');">
+                <div class="work-overlay">
+                    <h3>CHINA HI-TECH</h3>
+                    <p>Corporate Logo Design</p>
+                </div>
+            </div>
+            <!-- Tech Eatery Bandung -->
+            <div class="work-item" style="background-image: url('https://z-cdn-media.chatglm.cn/files/abb14b98-a849-472a-9de9-97bd40d4a9b5.png?auth_key=1884911226-85a47ba8f3174dab86d41dd0d8ccea78-0-6ec053afaaf6cf54b7c548833331b02a');">
+                <div class="work-overlay">
+                    <h3>TECH EATERY</h3>
+                    <p>Event Poster Design</p>
+                </div>
+            </div>
+            <!-- Chongqing Group -->
+            <div class="work-item" style="background-image: url('https://z-cdn-media.chatglm.cn/files/7b364f7c-e514-4f0d-996b-52aaeb550221.png?auth_key=1884911226-1dbe8ac1d8db462e883dd26eaea2b519-0-e65c56d0957262bfa956510430495d7f');">
+                <div class="work-overlay">
+                    <h3>CHONGQING GROUP</h3>
+                    <p>Brand Identity Design</p>
+                </div>
+            </div>
+            <!-- Samsung Galaxy S24 -->
+            <div class="work-item" style="background-image: url('https://z-cdn-media.chatglm.cn/files/7f45355c-a762-4aab-8bec-c3bd7a972f34.png?auth_key=1884911226-10d6bc7967eb4deb916d9304c8a45267-0-7d5affa25e434e38f552c40fa2ffe9dc');">
+                <div class="work-overlay">
+                    <h3>GALAXY S24 ULTRA</h3>
+                    <p>Product Advertising Poster</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Halaman About -->
+    <section id="about" class="page">
+        <div class="section-header">
+            <h2>ABOUT US</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="about-content">
+            <p>Welcome to <span>CHONGQING DESIGN</span>. We are a creative agency specializing in blending modern digital aesthetics with traditional and anime-inspired art styles. Our mission is to deliver extraordinary visual experiences that captivate your audience.</p>
+        </div>
+    </section>
+
+    <!-- Halaman Contact -->
+    <section id="contact" class="page">
+        <div class="section-header">
+            <h2>CONTACT US</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Let's Create Something Amazing Together!</h3>
+                <p>Reach out to us via WhatsApp for inquiries and collaborations.</p>
+                <a href="https://wa.me/6283189483134" target="_blank" class="wa-btn">
+                    <i class="fab fa-whatsapp"></i> +62 831-8948-3134
+                </a>
+            </div>
+            <div class="contact-form">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button onclick="sendToWhatsApp()">Send Message</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 CHONGQING DESIGN. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+  </html>
